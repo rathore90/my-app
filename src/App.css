@@ -27,8 +27,8 @@
 .App-link {
   color: #61dafb;
 }
-.card-holder{
-  
+.card-holder h1{
+  cursor: pointer;
 }
 
 @keyframes App-logo-spin {
