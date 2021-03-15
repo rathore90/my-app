@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PostData from '../data/audit.json'
 import '../App.css'
+import PostDetail from './PostDetail'
 
 class PostList extends Component {
     render(){    
@@ -8,13 +9,10 @@ class PostList extends Component {
         <div className="App">
             <h1>Imagine Everything</h1>
             {PostData.map((postDetails, index)=>{
-                return <div className="card-holder">
-                            <h1>{postDetails.email}</h1>
-                            <p>{postDetails.created}</p>
-                        </div>
+                return <PostDetail post={postDetails} key={'psot-list-key ${index}'}/>
             })}
         </div>
-    )
+        )
     }
 }
 
