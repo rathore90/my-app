@@ -31,6 +31,16 @@
   cursor: pointer;
 }
 
+.button{
+  padding: 1rem;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #e70a0a, #63759b);
+  color: #fff;
+  font-weight: bold;
+  font-size: larger;
+  cursor: pointer;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
