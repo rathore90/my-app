@@ -39,6 +39,7 @@
   font-weight: bold;
   font-size: larger;
   cursor: pointer;
+  border: 1px solid linear-gradient(45deg,#e70a0a,#63759b);
 }
 
 @keyframes App-logo-spin {
