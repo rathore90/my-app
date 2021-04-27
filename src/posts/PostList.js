@@ -7,6 +7,7 @@ class PostList extends Component {
     constructor(props){
         super(props)
         this.handleDataCallback = this.handleDataCallback.bind(this)
+        this.index = 0;
     }
     handleDataCallback(txtMsg){
         alert(txtMsg)
@@ -16,7 +17,7 @@ class PostList extends Component {
     return (
         <div className="App">
             <h1>Imagine Everything</h1>
-            {PostData.map((postDetails, index)=>{
+            {PostData.slice(this.index, this.index+5).map((postDetails, index)=>{
                 return <PostDetail 
                     // eslint-disable-next-line
                     post={postDetails} key={'psot-list-key ${index}'} 
